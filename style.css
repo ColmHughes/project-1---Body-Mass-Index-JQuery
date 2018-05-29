@@ -1,0 +1,66 @@
+html,body {
+    background: url(veg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Share', cursive;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.section {
+    background-color: #FFDDDD;
+    border-radius: 10%;
+    height: 90vh;
+    margin: 0px 20px 20px 20px;
+    opacity: 0.9;
+}
+.activeSection {
+    background-color: #ABF3A7;
+}
+.message {
+    display: none;
+    margin: 20px;
+}
+.btn-sm {
+    color: white;
+    background-color: #FF8376;
+    border-color: #940000;
+    margin: 10px 5px;
+}
+.active {
+    background-color: #63D763;
+    border-color: #005500;
+}
+
+button:focus {
+    outline: none;
+}
+#extra {
+    width: 70px;
+}
+#extraOne {
+    width: 70px;
+}
+h1 {
+    font-family: 'Patua One', cursive;
+}
+
+@media (min-width: 768px) {
+    html,body{
+        background: url(fruit.jpg) no-repeat center center fixed;
+        background-size: cover;
+    }
+    .section {
+        border-radius: 0;
+        margin: 20px 0px;
+    }
+    .left {
+        border-bottom-left-radius: 10%;
+        border-top-left-radius: 10%
+    }
+    .right {
+        border-bottom-right-radius: 10%;
+        border-top-right-radius: 10%;
+    }
+   
+}

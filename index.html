@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Measurements</title>
+        
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Patua+One|Share" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <div class="container ">
+            <div class="row">
+                <div class="col-sm-4 left section">
+                    <h1>What's your height.</h1>
+                    
+                    <button class="btn-sm btnH active setInches">Inches</button>
+                    <button class="btn-sm btnH setMetres">Metres</button>
+                    <button class="btn-sm btnH setFeet">Feet</button>
+                    
+                    <form  id="myFormHeight" name="answerForm" onSubmit="return false;"
+                       data-height="inches" action="#">
+                       <input id="inputHeight" type="number" name="answerHeight" placeholder="inches">
+                       <input id="extraOne" type="hidden" name="extraOne" placeholder="inches">
+                       <input class="inputHeight" type="submit" value="submit">
+                    </form>
+                    <div class="messageHeight message">
+                          
+                        <p class="inches"></p>
+                        <p class="metres" value="0"></p>
+                        <p class="feet"></p>
+                        <p class="yards"></p>
+                        <p class="miles"></p>
+                        </br>
+                        <p class="spires"></p>
+                    </div>
+                </div>    
+                
+                
+                    
+                    
+                    
+                <div class="col-sm-4 centre section">
+                    <h1>What's your weight.</h1>
+                    
+                    <button class="btn-sm btnW active setPounds">Pounds</button>
+                    <button class="btn-sm btnW setKilograms">Kilograms</button>
+                    <button class="btn-sm btnW setStones">Stones</button>
+                    
+                    <form  id="myForm" name="answerForm" onSubmit="return false;"
+                       data-weight="pounds" action="#">
+                       <input id="inputWeight" type="number" name="answerWeight" placeholder="pounds">
+                       <input id="extra" type="hidden" name="extra" placeholder="pounds">
+                       <input class="inputWeight" type="submit" value="submit">
+                    </form>
+                    
+                    <div class="messageWeight message">
+              
+                        <p class="pounds"></p>
+                        <p class="kilograms" value="0"></p>
+                        <p class="stones"></p>
+                        <p class="grams"></p>
+                        <p class="ounces"></p>
+                        <p class="tons"></p>
+                        </br>
+                        <p class="bananas"></p>
+                      
+                    </div>
+                </div>
+                
+                
+                <div class="col-sm-4 right section">
+                    <h1>BMI</h1>
+                    
+                    <button class="btn-sm btnS active">Female</button>
+                    <button class="btn-sm btnS ">Male</button>
+                    
+                    <form>
+                    <input class="inputBMI" type="button" value="submit">
+                    </form>
+                    <p class="BMI message messageBMI">
+                        
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div id="error" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+        
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Weight and Height must be chosen in order to calculate your BMI</h4>
+                    </div>
+                  
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="measurements.js"></script>
+    </body>
+</html>
