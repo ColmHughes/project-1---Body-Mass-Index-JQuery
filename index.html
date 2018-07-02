@@ -4,15 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Measurements</title>
+        <title>BMI</title>
         
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css?family=Patua+One|Share" rel="stylesheet">
         <link rel="stylesheet" href="style.css" type="text/css" />
-        <style>
-            
-        </style>
     </head>
     <body>
         <div class="container ">
@@ -76,17 +73,36 @@
                 
                 
                 <div class="col-sm-4 right section">
-                    <h1>BMI</h1>
+                    <h1>Body Mass Index</h1>
                     
-                    <button class="btn-sm btnS active">Female</button>
-                    <button class="btn-sm btnS ">Male</button>
+                    
                     
                     <form>
-                    <input class="inputBMI" type="button" value="submit">
+                    <input class="inputBMI" type="button" value="Calculate">
                     </form>
                     <p class="BMI message messageBMI">
                         
                     </p>
+                    <table class="table table-condensed">
+                        <tbody>
+                            <tr>
+                                <td>Under weight</td>
+                                <td class="under">Under 18.5</td>
+                            </tr>
+                            <tr>
+                                <td>Normal weight</td>
+                                <td class="normal">18.5 - 24.9</td>
+                            </tr>
+                            <tr>
+                                <td>Over weight</td>
+                                <td class="over">25 - 29.9</td>
+                            </tr>
+                            <tr>
+                                <td>Obese</td>
+                                <td class="over">Over 30</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
                 
             </div>

@@ -1,5 +1,5 @@
 html,body {
-    background: url(veg.jpg) no-repeat center center fixed;
+    background: url(veg.jpg) center center;
     background-size: cover;
     font-family: 'Share', cursive;
     height: 100%;
@@ -44,7 +44,10 @@ button:focus {
 h1 {
     font-family: 'Patua One', cursive;
 }
-
+.table {
+    display: none;
+    padding-top: 10px;
+}
 @media (min-width: 768px) {
     html,body{
         background: url(fruit.jpg) no-repeat center center fixed;

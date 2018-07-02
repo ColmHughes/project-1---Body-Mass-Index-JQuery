@@ -137,25 +137,29 @@ $(document).ready(function(){
 // --------------------bmi--------------------    
    
     $(".inputBMI").click(function() {
-        // evt.preventDefault()
         let kilogram = $(".kilograms").attr("value")*1;
         let metre = $(".metres").attr("value")*1;
-        console.log(kilogram);
-        console.log(metre);
         let bmi = 0;
         if (kilogram > 0 && metre > 0) {
             bmi = kilogram/(metre*metre);
             $(".BMI").text("Your BMI is " + bmi.toFixed(2))
             $(".messageBMI").fadeIn(2000);
-            console.log(bmi);
+            $(".table").fadeIn(2000);
         } else {
             $("#error").modal();
         }
-            
         
         
-        console.log(bmi)
-        
+        if (bmi < 18.5) {
+            $(".under").css("color","red");
+        } else if (bmi >= 18.5 && bmi < 25) {
+            $(".normal").css("color","red");
+        } else if (bmi >= 25 && bmi < 30) {
+            $(".over").css("color","red");
+        } else {
+            $(".obese").css("color","red");
+        }
+      
         
     });    
     
